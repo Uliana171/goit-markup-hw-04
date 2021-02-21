@@ -94,11 +94,19 @@ h1 {
   margin-bottom: 0px;
   min-height: 75px;
 }
+
+.features-icon {
+  /* padding: 25px 100px; */
+  margin: 0px;
+  list-style: none;
+  display: flex;
+  width: 70px;
+  height: 70px;
+}
+
 /* наші переваги */
 
 /* послуги */
-
-/* допрацювати картинки */
 
 .servises {
   padding-bottom: 94px;
@@ -202,6 +210,12 @@ h1 {
 
   margin-block-start: 0px;
 }
+
+.sociallinks-icon {
+  width: 20px;
+  height: 20px;
+}
+
 /* наша команда */
 
 img {
