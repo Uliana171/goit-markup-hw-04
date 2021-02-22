@@ -13,14 +13,18 @@
   --white-background: rgba(255, 255, 255, 1);
   --grphite-background: rgba(47, 48, 58, 1);
   --button-background: rgba(245, 244, 250, 1);
+  --footer-icon-background: rgba(255, 255, 255, 0.1);
 
   --gray-line: rgba(236, 236, 236, 1);
 
   --white-border: rgba(238, 238, 238, 1);
 
+  --gray-border: rgba(175, 177, 184, 1);
+
+  --gray-sprite: rgba(175, 177, 184, 1);
+
   --shadow: rgba(0px 2px 2px 0px 0, 0, 0, 0, 12),
     rgba(0px 1px 2px 0px 0, 0, 0, 0, 08), rgba(0px 3px 1px 0px 0, 0, 0, 0, 1);
-
   --project-gap: 30px;
 }
 
@@ -110,26 +114,46 @@ body {
 }
 
 .nav-list li:last-child {
-  margin-right: 331px;
+  margin-right: 0px;
+}
+
+/* contacts header */
+
+.contacts-header {
+  margin-left: auto;
 }
 
 .contacts-header li:last-child {
   margin-left: 36px;
 }
 
-.contacts-header {
+.contacts-header-list {
+}
+
+.contacts-header-link {
   color: var(--gray-text);
   font-weight: 500;
   font-size: 14px;
+  text-decoration: none;
 }
 
-.page-header {
-  border-bottom: 1px solid var(--gray-line);
+.contacts-header-link:hover,
+.contacts-header-link:focus {
+  color: var(--blue-text);
 }
+
+.contacts-header-icon {
+  margin-right: 10px;
+  align-items: center;
+  fill: currentColor;
+}
+
+/* contacts header */
 
 .page-header {
   padding-top: 24px;
   padding-bottom: 25px;
+  border-bottom: 1px solid var(--gray-line);
 }
 
 .page-header,
@@ -139,9 +163,6 @@ body {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.contacts-icon {
 }
 
 /* для всіх контейнерів */
@@ -197,4 +218,66 @@ body {
 .contacts-footer-list li {
   margin-top: 9px;
 }
+
+.footer > .container {
+  display: flex;
+}
+
+.join-container {
+  margin-left: 70px;
+  margin-top: 12px;
+  margin-bottom: 40px;
+}
+
+.join-tittle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--white-text);
+
+  margin-bottom: 20px;
+}
+
+.join {
+  display: flex;
+  justify-content: space-between;
+}
+
+.join-link {
+  display: block;
+  color: var(--white-text);
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  background-color: var(--footer-icon-background);
+  border-radius: 50px;
+}
+
+.join-item {
+  margin-right: 10px;
+}
+
+.join-item:last-child {
+  margin-right: 0px;
+}
+
+.join-link:hover,
+.join-link:focus {
+  color: rgba(255, 255, 255, 1);
+  background-color: var(--blue-text);
+  border-radius: 50px;
+}
+
+.join-icon {
+  fill: currentColor;
+}
+
+h3 {
+  margin: 0px;
+}
+
 /* footer */
