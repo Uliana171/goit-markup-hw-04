@@ -5,8 +5,8 @@ h1 {
 /* заголовок з кнопкою */
 .hero {
   background-color: rgba(196,196,196,1);
-  background-image: url("../images/img.jpg");
-  /* background-image: linear-gradient(#2F303A); */
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url("../images/img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
